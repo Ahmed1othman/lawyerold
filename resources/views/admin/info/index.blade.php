@@ -8,7 +8,6 @@
         @include('message')
         <div class="card">
             <div class="card-body">
-
                 @foreach ($data as $row)
                 <form class="kt-form" id="kt_form" method="post" action="{{route('info.update',[$row->id])}}"
                     enctype="multipart/form-data">
@@ -40,7 +39,7 @@
                         @elseif ($row->type=='string')
                         <div class="col-xl-8">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="value" required
+                                <input type="text" class="form-control" name="value"
                                     placeholder="{{__('admin/app.'.$row->option)}}"
                                     value="{{ old('value', $row->value  ) }}">
                             </div>
@@ -104,6 +103,7 @@
 
 @section('js')
     <script>
+
         Coloris({
             el: '.coloris',
             format: 'hex',

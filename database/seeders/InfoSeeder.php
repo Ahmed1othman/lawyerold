@@ -32,13 +32,6 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'show_logo','value' => true,'type' => 'checkbox']);
         Info::create(['option' => 'portfolio_pdf','value' => 'portfolio.pdf','type' => 'pdf']);
         Info::create(['option' => 'main_background','value' => 'background.png','type' => 'image']);
-//        Info::create(['option' => 'about_image','value' => 'about.png','type' => 'image']);
-//        Info::create(['option' => 'services_image','value' => 'service.png','type' => 'image']);
-//        Info::create(['option' => 'projects_image','value' => 'projects.png','type' => 'image']);
-//        Info::create(['option' => 'call_image','value' => 'call.png','type' => 'image']);
-//        Info::create(['option' => 'news_image','value' => 'news.png','type' => 'image']);
-//        Info::create(['option' => 'footer_image','value' => 'footer.png','type' => 'image']);
-//        Info::create(['option' => 'contact_image','value' => 'contact.png','type' => 'image']);
         Info::create(['option' => 'email','value' => 'othmanahmed865@gmail.com','type' => 'string']);
         Info::create(['option' => 'notifications_email','value' => 'othmanahmed865@gmail.com','type' => 'string']);
         Info::create(['option' => 'phone','value' => '0100000000','type' => 'string']);
@@ -54,8 +47,7 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'about_us_en','value' => 'About US bla bla bla bla bla bla bla bla ...','type' => 'text']);
         Info::create(['option' => 'about_us_ar',
             'value' => 'يعتبر مكتب العيسى للمحاماة والاستشارات القانونية من اول المكاتب الرائدة في مجال المحاماة في المملكة العربية السعودية، قام بتأسيسه الدكتور ابراهيم بن عيسى العيسى في عام 1993م، المحامي والمستشار القانوني المعروف، وهو الذي يملك سجل واسع من الخبرات العلمية والعملية من خلال أكثر من 45 سنة قضاها في مختلف المجالات القانونية. وبدء نشاطه في المحاماة منذ عام 1993م واستمر حتى وقتنا الحالي.
-وبعد ارتباط الدكتور ابراهيم العيسى بعضوية مجلس الشورى، انتقلت إدارة المكتب إلى الدكتور/ محمد العيسى، صاحب الخبرة الواسعة في القوانين المحلية والدولية، فهو يحمل شهادة الدكتوراه في القانون بتخصص التحكيم التجاري الدولي، وكذلك الماجستير في القانون التجاري الدولي من جامعة ايسكس البريطانية، وبدأت خبراته العملية منذ 1998م.','type' => 'text']);
-
+وبعد ارتباط الدكتور ابراهيم العيسى بعضوية مجلس الشورى، انتقلت إدارة المكتب إلى الدكتور/ محمد العيسى، صاحب الخبرة الواسعة في القوانين المحلية والدولية، فهو يحمل شهادة الدكتوراه في القانون بتخصص التحكيم التجاري الدولي، وكذلك الماجستير في القانون التجاري الدولي من جامعة ايسكس البريطانية، وبدأت خبراته العملية منذ 1998م.           ','type' => 'text']);
         Info::create(['option' => 'mission_en','value' => 'بلااااابلااااابلااااامن نحن بلااااا ','type' => 'text']);
         Info::create(['option' => 'mission_ar','value' => 'بلااااابلااااابلااااامن نحن بلااااا ','type' => 'text']);
 

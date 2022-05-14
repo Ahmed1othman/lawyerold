@@ -29,7 +29,7 @@ class InfoRequest extends FormRequest
             {
                 return [
                     'option' => 'required|string|min:2|unique:infos,option,NULL,id,deleted_at,NULL',
-                    'value' => 'sometimes|min:1',
+                    'value' => 'nullable|min:1',
                     ];
             }
             case 'PATCH':
@@ -37,7 +37,7 @@ class InfoRequest extends FormRequest
             {
                 return [
                     'option' => 'required|string|min:2|unique:infos,option,NULL,id,deleted_at,NULL'.$this->id,
-                    'value' => 'sometimes|min:1',
+                    'value' => 'nullable|min:1',
 
                 ];
             }

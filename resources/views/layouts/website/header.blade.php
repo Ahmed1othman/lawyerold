@@ -254,12 +254,12 @@
     #languages{
         text-align: center;
         position: absolute;
-        bottom: 122px;
+        bottom: 0px;
         width: 60px;
         height: 60px;
         border: 2px solid {{websiteInfo_hlp('main_font_color')}};
         font-size: 12px;
-        {{App::getLocale()=='en'?'right: -80px;':'left: -80px;'}}
+        {{App::getLocale()=='en'?'left: -85px;':'right: -85px;'}};
         z-index: 90;
         background-color: #fff;
         border-radius: 30px;
@@ -358,8 +358,8 @@
 
     .logo_image {
         margin:5px;
-        width: 85px;
-        height: 85px;
+        width: 50px;
+        height: 50px;
         border-radius: 5px;
         display: inline-block;
     }
