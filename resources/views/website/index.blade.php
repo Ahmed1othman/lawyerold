@@ -9,9 +9,9 @@
 
             <header id="site_header" class="header mobile-menu-hide">
                 <div class="header-content">
-                    <div class="header-photo" style="height: 180px;">
-                        <img src="{{asset('storage/front/'.websiteInfo_hlp('lawyer_photo'))}}" alt="{{websiteInfo_hlp('website_name_'.App::getlocale())}}" style="height: 100%;">
-                    </div>
+{{--                    <div class="header-photo" style="height: 180px;">--}}
+{{--                        <img src="{{asset('storage/front/'.websiteInfo_hlp('lawyer_photo'))}}" alt="{{websiteInfo_hlp('website_name_'.App::getlocale())}}" style="height: 100%;">--}}
+{{--                    </div>--}}
                     <div class="header-titles">
                         {!! websiteInfo_hlp('header_text_'.App::getLocale()) !!}
                     </div>
