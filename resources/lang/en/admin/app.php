@@ -148,5 +148,7 @@ return [
     'lawyer_title_en' => 'English Lawyer Title',
     'lawyer_title_ar' => 'Arabic Lawyer Title',
     'lawyer_photo' => 'Lawyer Photo',
+    'header_text_ar' => 'Header Text in Arabic',
+    'header_text_en' => 'Header Text in English',
     'theme' => 'Theme',
 ];
