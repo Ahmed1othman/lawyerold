@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
        DB::table('users')->delete();
        User::create([
            'name' => 'Admin'
-           ,'email' => 'admin@admin.com'
-           ,'password' => Hash::make('12345678')
+           ,'email' => 'admin@abdallahmwathiq.com'
+           ,'password' => Hash::make('@bdalla7_2022')
        ]);
     }
 }
