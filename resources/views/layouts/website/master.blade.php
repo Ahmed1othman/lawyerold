@@ -6,6 +6,8 @@
     <title>@yield('title') {{ websiteInfo_hlp('website_name') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+    <meta name="description" content="موقع الاستاذ المحامي والموثق لدي وزارة العدل السعودية/ عبد الله المنصوري" />
+    <meta name="keywords" content="نقدم خدمات الاستشارات القانونية وخدمات التوثيق اطلب الان اونلاين وسوف نتواصل معك في اقرب وقت." />
 
 
 

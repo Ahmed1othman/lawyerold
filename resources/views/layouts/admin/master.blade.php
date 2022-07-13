@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="this my acount to my son" />
-    <meta name="keywords" content="Html,css,utf,javascript" />
+    <meta name="description" content="موقع الاستاذ المحامي والموثق لدي وزارة العدل السعودية/ عبد الله المنصوري" />
+    <meta name="keywords" content="نقدم خدمات الاستشارات القانونية وخدمات التوثيق اطلب الان اونلاين وسوف نتواصل معك في اقرب وقت." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
