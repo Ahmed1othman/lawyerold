@@ -11,7 +11,7 @@
                 <p>{!! websiteInfo_hlp('about_us_'.App::getLocale()) !!}</p>
             </div>
             <div class="col-xs-12 col-md-6">
-                <img src="{{asset('website/img/tawtheeq.jpg')}}" style="margin: auto;border: 4px solid #47896a;padding: 7px;">
+                <img src="{{asset('website/img/tawtheeq.jpg')}}" style="margin: auto;border: 2px solid #47896a;padding: 5px;">
             </div>
         </div>
         <!-- End of about us -->
