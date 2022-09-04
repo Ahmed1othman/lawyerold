@@ -61,7 +61,7 @@
                             <div class="col-md-6">
                                 <label class="mb-2">{{trans('admin/services.Service_icon')}}</label>
                                 <select name="icon" id="icon_menu" class="form-control" required>
-                                    <option value=''>{{__('admin/app.select')}}</option>
+                                    <option value='{{$data->icon}}'>{{$data->icon}}</option>
                                     <option value='fa-500px'>&#xf26e; fa-500px</option>
                                     <option value='fa-address-book'>&#xf2b9; fa-address-book</option>
                                     <option value='fa-address-book-o'>&#xf2ba; fa-address-book-o</option>

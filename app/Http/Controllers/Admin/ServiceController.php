@@ -109,7 +109,8 @@ class ServiceController extends Controller
         try {
             $data = [
                 'title' => ['en' => $request->title, 'ar' => $request->title_ar],
-                'notes' => ['en' => $request->notes, 'ar' => $request->notes_ar]
+                'notes' => ['en' => $request->notes, 'ar' => $request->notes_ar],
+                'icon' => $request->icon
             ];
             if ($request->active) {
                 $data['active'] = 1;
