@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Mail\Password;
+
 use App\Mail\RequestNotify;
 use App\Models\AdviceOrder;
 use App\Models\Client;
@@ -18,6 +18,7 @@ use App\Models\Service;
 use App\Models\SliderOption;
 use App\Models\Slider;
 use App\Models\Subscription;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
@@ -27,9 +28,12 @@ use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
+    use SEOToolsTrait;
 
     public function index()
     {
+
+
         $slideroption=SliderOption::first();
 
         if(!$slideroption){
@@ -48,6 +52,19 @@ class HomeController extends Controller
 //            'projects' => project::whereActive(1)->orderByDesc('id')->limit(3)->get(),
 //            'news' => news::whereActive(1)->orderByDesc('id')->limit(3)->get(),
         ];
+
+        //$this->seo()->setTitle('الموثق والمحامي عبد الله منصور');
+//        $this->seo()->metatags()->setKeywords();
+        //seo meta tags for home page using seotools package
+        $this->seo()->setDescription('مكتب المحامي والموثق عبد الله منصور لجميع اعمال التوثق والاستشارات القانونية');
+        $this->seo()->opengraph()->addImage(asset('images/logo.png'));
+        $this->seo()->setCanonical(url('/'));
+        $this->seo()->opengraph()->setUrl(url('/'));
+        $this->seo()->opengraph()->addProperty('type', 'website');
+        $this->seo()->opengraph()->addProperty('locale', 'ar_AR');
+        $this->seo()->opengraph()->addProperty('locale:alternate', ['ar_AR', 'en_US']);
+        $this->seo()->opengraph()->setTitle('الموثق والمحامي/عبد الله منصور الشهراني');
+        $this->seo()->opengraph()->setDescription('مكتب المحامي والموثق عبد الله منصور لجميع اعمال التوثق والاستشارات القانونية');
 
         return view('website.index', $date);
     }

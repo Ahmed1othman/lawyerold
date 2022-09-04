@@ -1,7 +1,4 @@
 @extends('layouts.website.master')
-@section('title')
-   {{__('site/app.home')}}
-@endsection
 @section('content')
 
     <div class="page">
