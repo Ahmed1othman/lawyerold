@@ -1,14 +1,13 @@
-<div id="logos" class="d-sm-block">
-        <a href="https://mwathiq.sa/MowathiqenSearch/MowathiqenSearchIndex" target="_blank">
-        <img class="logo_image" src="{{asset('website/img/logos/auth_logo.png')}}">
-    </a>
-    <a href="https://https://sba.gov.sa" target="_blank">
-        <img class="logo_image" src="{{asset('website/img/logos/lawer_logo.jpg')}}">
-    </a>
-
-    <a href="https://www.moj.gov.sa/ar/pages/default.aspx" target="_blank">
-        <img class="logo_image" src="{{asset('website/img/logos/Ministry.png')}}">
-    </a>
+<div id="logos" class=" language_moblie d-block d-md-none">
+    <div id="languages" style="top: -30px; @if(app()->getLocale() == 'ar')right: -30px; @else left: -30px; @endif">
+        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+            @if($properties['native'] != LaravelLocalization::getCurrentLocaleNative() )
+                <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                    {{ $properties['native'] }}
+                </a>
+            @endif
+        @endforeach
+    </div>
 </div>
 
 

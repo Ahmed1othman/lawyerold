@@ -107,6 +107,7 @@
                 <div class="animated-sections kit-overlay1" style="background-image: url('');">
 
                     @include('website.sections.logos')
+
                     <!-- Home Subpage -->
                     @include('website.sections.home')
                     <!-- End of Home Subpage -->

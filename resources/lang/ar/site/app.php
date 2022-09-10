@@ -37,6 +37,7 @@ return [
     'Submit' => 'ارسال',
     'About_Us' => 'من نحن',
     'about_us' => 'من نحن',
+    'important_links' => 'روابط تهمك',
     'Phone Number' => 'رقم الهاتف',
 
     'Subscribe' => 'اشترك الان',

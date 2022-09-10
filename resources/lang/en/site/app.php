@@ -52,6 +52,7 @@ return [
     'vision'=>'Vision',
     'mission'=>'Mission',
     'values'=>'Values',
+    'important_links'=>'Important Links',
 
     'request_documentation_service'=>'Request Documentation Service',
     'Abdullah Mansour'=>'Abdullah Mansour',
