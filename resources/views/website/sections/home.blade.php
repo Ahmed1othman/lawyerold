@@ -10,7 +10,7 @@
                             <img src="{{asset('storage/front/'.websiteInfo_hlp('logo_'.App::getLocale()))}}" alt="{{websiteInfo_hlp('website_name_'.App::getLocale())}}">
                         </div>
                     @else
-                        <h2 class="mb-5">
+                        <h2 style="margin-bottom: 10px">
                             {{websiteInfo_hlp('website_name_'.App::getLocale())}}
                         </h2>
                     @endif
