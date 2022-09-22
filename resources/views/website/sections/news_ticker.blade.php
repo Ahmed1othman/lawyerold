@@ -7,7 +7,7 @@
                     <a href="#">{{$new->notes}}</a>
                 </li>
                 <li style="text-align: center; vertical-align: middle">
-                    <img src="{{asset('website/img/logos/logo7.png')}}" style="vertical-align:middle; height: 20px;width: 20px"></img>
+                    <img src="{{asset('website/img/logos/logo6.png')}}" style="vertical-align:middle; height: 20px;width: 20px"></img>
                 </li>
             @endforeach
         </ul>
