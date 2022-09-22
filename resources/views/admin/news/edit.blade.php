@@ -53,30 +53,6 @@
                         </div>
                     </div>
 
-
-                    <br>
-
-                    <div class="row">
-                        <div class="col-xl-9 mx-auto">
-                            @if ($data->image)
-                            <a href="{{asset($data->image)}}" data-fancybox="group2">
-                                <img width="75px" height="75px" src="{{asset($data->image)}}" alt="{{$data->title}}" class="">
-                            </a>
-                            @endif
-
-                            <p class="text-danger">* {{trans('admin/news.Attachments_are_of_image_type_only')}}</p>
-                            <h6 class="mb-0 text-uppercase">{{trans('admin/news.Attachments')}}</h6>
-                            <hr />
-                            <div class="card">
-                                <div class="card-body">
-                                    <input id="image-uploadify" name="photo" type="file" accept="image/*">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
                     <br>
 
                     <div class="row">

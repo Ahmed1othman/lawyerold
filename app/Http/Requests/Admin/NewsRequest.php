@@ -34,7 +34,6 @@ class NewsRequest extends FormRequest
                         'title_ar' => 'required|string|min:2|max:150|unique:news,title->ar'. $this->id,
                         'notes' => 'required|string|min:2|unique:news,notes->en' . $this->id,
                         'notes_ar' => 'required|string|min:2|unique:news,notes->ar' . $this->id,
-                        'photo' => 'required|image|mimes:jpeg,bmp,png,jpg|max:4096'
                     ];
                 }
             case 'PATCH':
@@ -43,8 +42,7 @@ class NewsRequest extends FormRequest
                         'title' => 'required|string|min:2|max:150|unique:news,title->en' . $this->id,
                         'title_ar' => 'required|string|min:2|max:150|unique:news,title->ar' . $this->id,
                         'notes' => 'required|string|min:2|unique:news,notes->en' .$this->id,
-                        'notes_ar' => 'required|string|min:2|unique:news,notes->ar' . $this->id,
-                        'photo' => 'sometimes|image|mimes:jpeg,bmp,png,jpg|max:4096'
+                        'notes_ar' => 'required|string|min:2|unique:news,notes->ar' . $this->id
                     ];
                 }
             default:

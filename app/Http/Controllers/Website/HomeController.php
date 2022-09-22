@@ -50,7 +50,7 @@ class HomeController extends Controller
 //            'sliders' => Slider::whereActive(1)->orderByDesc('id')->limit(3)->get(),
 //            'features' => feature::whereActive(1)->orderByDesc('id')->limit(3)->get(),
 //            'projects' => project::whereActive(1)->orderByDesc('id')->limit(3)->get(),
-//            'news' => news::whereActive(1)->orderByDesc('id')->limit(3)->get(),
+            'news' => news::whereActive(1)->orderByDesc('id')->limit(3)->get(),
         ];
 
         //$this->seo()->setTitle('الموثق والمحامي عبد الله منصور');

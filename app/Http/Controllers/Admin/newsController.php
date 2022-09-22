@@ -50,7 +50,7 @@ class newsController extends Controller
      */
     public function store(NewsRequest $request)
     {
-        try {
+//        try {
             $data = [
                 'title' => ['en' => $request->title, 'ar' => $request->title_ar],
                 'notes' => ['en' => $request->notes, 'ar' => $request->notes_ar]
@@ -69,10 +69,10 @@ class newsController extends Controller
             $this->repo->create($data);
             session()->flash('Add', 'تم اضافه الخبر بنجاح ');
             return redirect('news');
-        } catch (\Exception $e) {
-            return redirect()->back()
-                ->with('error', __('app.some_thing_error'));
-        }
+//        } catch (\Exception $e) {
+//            return redirect()->back()
+//                ->with('error', __('app.some_thing_error'));
+//        }
     }
 
     /**

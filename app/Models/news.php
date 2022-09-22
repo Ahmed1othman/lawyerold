@@ -12,7 +12,7 @@ class news extends Model
     use HasFactory;
     use SoftDeletes;
 
-    
+
     use HasTranslations;
 
     public $translatable = ['title','notes'];
@@ -20,16 +20,7 @@ class news extends Model
     protected $fillable = [
         'title',
         'notes',
-        'photo',
         'active',
     ];
-
-    public $appends=['image'];
-
-
-    public function getImageAttribute()
-    {
-        return $this->attributes['photo'] != null ? asset('storage/news/'.$this->attributes['photo'] ) : null;
-
-    }
+    
 }
