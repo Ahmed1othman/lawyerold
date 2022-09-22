@@ -237,6 +237,8 @@
     }
 </style>
 
+<link rel="stylesheet" href="{{ asset('website/plugins/news-ticker/css/style.css')}}" />
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 <link href="{{ asset('website/plugins/notifications/css/lobibox.min.css') }}" rel="stylesheet"/>
 
@@ -395,4 +397,27 @@
     }
 
 
+    .acme-news-ticker {
+        position: absolute;
+        top: 10px;
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 83%;
+        border-radius: 10px;
+        height: 45px;
+        border: 0px solid {{websiteInfo_hlp('main_color')}};
+    }
+
+
+    .acme-news-ticker-label {
+        background: {{websiteInfo_hlp('main_color')}};
+        border-radius: 10px;
+
+    }
+    .acme-news-ticker-box ul li a{
+        color: {{websiteInfo_hlp('main_color')}}!important;
+        font-weight: bold;
+    }
 </style>
+
+

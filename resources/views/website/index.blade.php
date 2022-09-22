@@ -2,6 +2,7 @@
 @section('content')
 
     <div class="page">
+        @include('website.sections.news_ticker')
         <div class="page-content">
 
             <header id="site_header" class="header mobile-menu-hide">
@@ -132,9 +133,13 @@
                     <!-- Contact Subpage -->
                     @include('website.sections.contact_us')
                     <!-- End of Contact Subpage -->
+
+
                 </div>
             </div>
-
         </div>
+
     </div>
+
+
 @endsection
