@@ -17,7 +17,7 @@
 
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_name')}}</label>
-                            <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" value="{{ $data->getTranslation('title', 'en') }}}">
+                            <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" value="{{ $data->getTranslation('title', 'en') }}">
                             @error('title')
                             <div class="alert alert-danger">{{$Message}}</div>
                             @enderror
@@ -26,7 +26,7 @@
 
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_name_ar')}}</label>
-                            <input type="text" name="title_ar" class="form-control @error('title_ar') is-invalid @enderror" value="{{ $data->getTranslation('title', 'ar') }}}">
+                            <input type="text" name="title_ar" class="form-control @error('title_ar') is-invalid @enderror" value="{{ $data->getTranslation('title', 'ar') }}">
                             @error('title_ar')
                             <div class="alert alert-danger">{{$Message}}</div>
                             @enderror
@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col">
                             <label class="mb-2">{{ trans('admin/news.new_notes') }}</label>
-                            <textarea class="form-control ckeditor" rows="5" name="notes"> {{ $data->getTranslation('notes', 'en') }} </textarea>
+                            <textarea class="form-control" name="notes"> {{ $data->getTranslation('notes', 'en') }} </textarea>
                         </div>
                     </div>
 
@@ -49,33 +49,9 @@
                     <div class="row">
                         <div class="col">
                             <label class="mb-2">{{ trans('admin/news.new_notes_ar') }}</label>
-                            <textarea class="form-control ckeditor" rows="5" name="notes_ar"> {{ $data->getTranslation('notes', 'ar') }} </textarea>
+                            <textarea class="form-control" name="notes_ar"> {{ $data->getTranslation('notes', 'ar') }} </textarea>
                         </div>
                     </div>
-
-
-                    <br>
-
-                    <div class="row">
-                        <div class="col-xl-9 mx-auto">
-                            @if ($data->image)
-                            <a href="{{asset($data->image)}}" data-fancybox="group2">
-                                <img width="75px" height="75px" src="{{asset($data->image)}}" alt="{{$data->title}}" class="">
-                            </a>
-                            @endif
-
-                            <p class="text-danger">* {{trans('admin/news.Attachments_are_of_image_type_only')}}</p>
-                            <h6 class="mb-0 text-uppercase">{{trans('admin/news.Attachments')}}</h6>
-                            <hr />
-                            <div class="card">
-                                <div class="card-body">
-                                    <input id="image-uploadify" name="photo" type="file" accept="image/*">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
 
                     <br>
 

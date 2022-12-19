@@ -2,21 +2,14 @@
     <div class="acme-news-ticker-label">اخر الاخبار</div>
     <div class="acme-news-ticker-box">
         <ul class="my-news-ticker">
-            <li>
-                <a href="#">نقدم لكم خدمات التوثيق المختلفة مثل</a>
-            </li>
-            <li>
-                <a href="#">***</a>
-            </li>
-            <li>
-                <a href="#">يمكنكم من خلال الموقع الاستفسار عن وطلب الاستشارات القانونية وطلبات التوثيق المختلفة</a>
-            </li>
-            <li>
-                <a href="#">***</a>
-            </li>
-            <li>
-                <a href="#">مرحبا بكم في موقع المحامي والموثق القانوني الاستاذ عبدالله المنصور</a>
-            </li>
+            @foreach($news as $new)
+                <li>
+                    <a href="#">{{$new->notes}}</a>
+                </li>
+                <li style="text-align: center; vertical-align: middle">
+                    <img src="{{asset('website/img/logos/logo6.png')}}" style="vertical-align:middle; height: 20px;width: 20px"></img>
+                </li>
+            @endforeach
         </ul>
     </div>
     <div class="acme-news-ticker-controls acme-news-ticker-horizontal-controls">
