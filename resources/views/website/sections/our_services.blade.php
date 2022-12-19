@@ -34,7 +34,7 @@
         </div>
         <div class="white-space-40"></div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12">
+            <div class="col-xs-12 col-md-12">
                 <div class="testimonials owl-carousel">
                     @foreach($employees as $employee)
                         <!-- Testimonial 1 -->
@@ -74,7 +74,7 @@
             <div class="col-xs-12 col-sm-12">
                 <div class="clients owl-carousel">
                     @foreach($clients as $client)
-                        <div class="client-block" style="height: 180px; width: 180px">
+                        <div class="client-block" style="height: 150px; width: 150px">
                             <img src="{{asset($client->image)}}" class="img-responsive img-thumbnail" style="padding: 3px;border: solid 2px rgb(101 101 101);border-radius: 5%; height: 100%; width: 100%; filter: grayscale(40%);" alt="{{$client->name}}">
                         </div>
                     @endforeach

@@ -9,6 +9,7 @@ return [
     'Attachments_are_of_image_type_only' => 'المرفقات من نوع صوره فقط',
     'Attachments' => 'المرفقات',
     'Add_new_client' => 'اضافه عميل جديده',
+    'Add_new_clients' => 'اضافه عميل جديده',
     'Edit_client' => 'تعديل العميل',
     'Edit' => 'تعديل',
     'title' => 'الاسم',

@@ -9,6 +9,7 @@ return [
     'Attachments_are_of_image_type_only' => 'Attachments are of image type only',
     'Attachments' => 'Attachments',
     'Add_new_client' => 'Add new client',
+    'Add_new_clients' => 'Add new client',
     'Edit_client' => 'Edit client',
     'title' => 'title',
     'notes' => 'notes',

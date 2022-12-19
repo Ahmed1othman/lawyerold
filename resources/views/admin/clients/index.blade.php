@@ -32,9 +32,11 @@
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$row->name}}</td>
                                 <td>
+                                    {{$row->image}}
                                     @if ($row->image)
-                                    <a href="{{asset($row->image)}}" data-fancybox="group2">
-                                        <img width="75px" height="75px" src="{{asset($row->image)}}"
+
+                                    <a href="{{$row->image}}" data-fancybox="group2">
+                                        <img width="75px" height="75px" src="{{$row->image}}"
                                             alt="{{$row->title}}" class="">
                                     </a>
                                     @endif
